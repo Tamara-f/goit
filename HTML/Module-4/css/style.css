@@ -1,0 +1,16 @@
+
+.item {
+    background: #ccc;
+  }
+  
+  .item-name {
+    background: grey;
+  }
+  
+  .item:hover img {
+    border: 0px solid #333;
+  }
+  
+  .item:hover .item-name {
+    background: cyan;
+  }
