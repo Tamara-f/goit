@@ -6,7 +6,7 @@
     padding: 0;
 }
 
-body {
+.main {
     font-family: "Open sans", "Roboto", sans-serif;
     color: #515151;
     font-size: 14px;
@@ -32,7 +32,7 @@ body {
     padding: 2px 0 0;
 }
 
-.logo::first-letter {
+.first-letter {
     font-weight: 900;
     color: rgb(26, 188, 156);
 }
@@ -85,10 +85,8 @@ body {
     width: 164px;
     height: 7px;
     content: '';
-    margin: 0 auto;
-    margin-top: 32px;
+    margin: 32px auto 0 auto;
 }
-
 
 .items {
     margin: 0 0 76px 0;
@@ -119,8 +117,7 @@ body {
 .item-info {
     margin: 0;
     padding: 0;
-    width: 255px;
-    background: #323232;
+    background: rgb(50, 50, 50);
 }
 
 .item-name {
