@@ -1,7 +1,6 @@
-
 *,
-**::after,
-**::before,{
+*::after,
+*::before,{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -17,7 +16,6 @@
     padding: 0;
     width: 1110px;
     text-align: center;
-
 }
 
 .clearfix::after {
@@ -41,9 +39,8 @@ li {
     text-transform: uppercase;
     color: #515151;
     font-weight: 300;
-    line-height: 35px;
     margin: 0;
-    padding: 2px 0 0;
+    padding: 4px 0 0;
 }
 
 .logo::first-letter {
@@ -53,8 +50,8 @@ li {
 
 .nav {
     margin: 0;
-    padding-top: 6px;
-    padding-bottom: 22px;
+    padding: 5px 0 18px;
+
 }
 
 .navigation {
@@ -64,11 +61,16 @@ li {
     font-size: 14px;
     font-family: "OpenSans";
     font-weight: bold;
+    padding-top: 4px;
+    width: 460px;
 }
 
 .navigation li {
     float: left;
-    margin-left: 34px;
+    margin-right: 33px;
+}
+.navigation li:last-child {
+    margin-right: 0;
 }
 
 .navigation a:hover,
@@ -382,7 +384,6 @@ display: none;}
     height: 47px;
     background-color: rgb(50, 50, 50);
     font-size: 14px;
-    font-family: "OpenSans" sans-serif;
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     line-height: 3.5;
@@ -485,7 +486,8 @@ display: none;}
         padding: 0;
         white-space: nowrap;
         clip-path: inset(100);
-        clip: rect(0 0 0 0);
-        overflow: hidden;    }
+        clip: rect(0, 0, 0, 0);
+        overflow: hidden;
+    }
     
 
