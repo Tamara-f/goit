@@ -1,6 +1,6 @@
 *,
-**::after,
-**::before {
+*::after,
+*::before {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -20,7 +20,7 @@
     content: '';
     clear: both;
 }
- 
+
 .logo {
     float: left;
     font-family: "Roboto", sans-serif;
@@ -28,14 +28,16 @@
     text-transform: uppercase;
     color: #515151;
     font-weight: 300;
-    line-height: 35px;
+    line-height: 32px;
     margin: 0;
-    padding: 4px 0 0;
+    padding: 0;
 }
+
 .logo a {
     text-decoration: none;
     color: #515151;
 }
+
 .logo::first-letter {
     font-weight: 900;
     color: rgb(26, 188, 156);
@@ -43,7 +45,7 @@
 
 .nav {
     margin: 0;
-    padding-top: 27px;
+    padding-top: 34px;
     padding-bottom: 46px;
 }
 
@@ -54,7 +56,7 @@
     font-size: 14px;
     font-family: "OpenSans";
     font-weight: bold;
-    padding: 0;
+    padding-top: 4px;
     width: 467px;
 }
 
@@ -62,8 +64,9 @@
     float: left;
     margin-right: 33px;
 }
-.navigation li:last-child { 
-       margin-right: 0;
+
+.navigation li:last-child {
+    margin-right: 0;
 }
 
 .navigation a:hover,
