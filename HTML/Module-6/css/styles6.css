@@ -1,0 +1,421 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    font-family: 'Roboto', 'Montserrat', 'Kaushan Script', sans-serif;
+    color: #333333;
+    font-size: 14px;
+    margin: 0 auto;
+    padding: 0;
+    width: 1200px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+/*header*/
+nav {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    min-height: 65px;
+    margin: 0 0 110px;
+    padding-top: 2px;
+}
+
+.logo a {
+    font-size: 30px;
+    font-family: "Montserrat";
+    color: #95e1d3;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+
+
+.menu {
+    /*ul*/
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    font-size: 14px;
+    font-family: "Montserrat";
+    text-transform: uppercase;
+    color: #95e1d3;
+    line-height: 1.2;
+    list-style: none;
+    width: 491px;
+    height: 65px;
+}
+
+.menu-items::after {
+    content: '';
+    background-color: rgb(243, 129, 129);
+    display: none;
+    width: 0;
+    height: 3px;
+    display: block;
+    margin-top: 10px;
+    transition: width 0.3s ease-out;
+}
+
+.menu-items {
+    text-decoration: none;
+    color: #95e1d3;
+}
+
+.menu-items:hover {
+    color: #f38181;
+}
+
+.menu-items:hover:after {
+    width: 100%;
+}
+
+/* tiltles */
+
+
+h2 {
+    font-size: 24px;
+    font-family: "Kaushan Script";
+    color: rgb(51, 51, 51);
+    line-height: 1.2;
+    font-weight: 400;
+    margin-bottom: 12px;
+}
+
+h3 {
+    font-size: 30px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+h3:after {
+    display: block;
+    background-color: rgb(243, 129, 129);
+    width: 60px;
+    height: 3px;
+    content: '';
+    margin: 0 auto;
+    margin-top: 35px;
+}
+
+.name {
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 12px;
+    padding-top: 27px;
+}
+
+/*iitems*/
+
+
+
+.digital {
+    list-style: none;
+    background: url(../img/icons/digital.png) no-repeat 0 4px;
+    padding-left: 60px;
+}
+
+.css {
+    list-style: none;
+    background: url(../img/icons/css.png) no-repeat 0 4px;
+    padding-left: 60px;
+}
+
+.seo {
+    list-style: none;
+    background: url(../img/icons/seo.png) no-repeat 0 4px;
+    padding-left: 60px;
+}
+
+.creativity {
+    list-style: none;
+    background: url(../img/icons/creativity.png) no-repeat 0 4px;
+    padding-left: 60px;
+}
+
+.design {
+    list-style: none;
+    background: url(../img/icons/webdesighn.png) no-repeat 0 4px;
+    padding-left: 60px;
+}
+
+.photography {
+    list-style: none;
+    background: url(../img/icons/photography.png) no-repeat 0 4px;
+    padding-left: 60px;
+}
+
+.item-name {
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    text-transform: uppercase;
+    line-height: 1.7;
+    font-weight: 400;
+    text-align: left;
+    margin-bottom: 9px;
+}
+
+.items {
+    padding: 65px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1151px;
+    margin: 0 auto;
+}
+
+.item {
+    flex: 0 0 360px;
+    margin-bottom: 87px;
+    cursor: pointer;
+}
+
+.item-description {
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(153, 153, 153);
+    line-height: 1.6;
+    text-align: left;
+
+}
+
+/*team section*/
+
+.team-photos {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0 auto;
+
+}
+
+.team-substrate {
+    position: relative;
+    background-color: rgb(149, 225, 211);
+    width: 380px;
+    height: 470px;
+}
+
+.team-photo-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.team-photo:hover .team-photo-img,
+.team-photo:hover .card-cover {
+    animation-name: animationName;
+    animation-duration: 4s;
+
+}
+
+@keyframes animationName {
+    from {
+        opacity: 0;
+        top: 0;
+        left: 0;}
+
+    to {
+        opacity: 1;
+        top: -11px;
+        left: -11px;}
+}
+
+.card-buttons {
+    width: 380px;
+    height: 470px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+
+}
+
+
+
+
+/*test*/
+.card-cover {
+    background: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
+    position: absolute;
+    width: 380px;
+    height: 470px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+
+
+
+.fb::after {
+    background-image: url(../img/icons/fb.png);
+    width: 13px;
+    height: 26px;
+    background-repeat: no-repeat;
+}
+
+.twitter::after {
+    background-image: url(../img/icons/twitt.png);
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 22px;
+}
+
+.pint::after {
+    background-image: url(../img/icons/pint.png);
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 22px;
+
+}
+
+.insta::after {
+    background-image: url(../img/icons/insta.png);
+    background-repeat: no-repeat;
+    width: 26px;
+    height: 26px;
+
+}
+
+.card-button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-button {
+    position: relative;
+    list-style: none;
+    width: 56px;
+    height: 56px;
+    background-color: rgb(252, 227, 138);
+}
+
+.card-button:hover {
+    background: #95e1d3;
+
+}
+
+
+
+.team-text {
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(153, 153, 153);
+    line-height: 1.6;
+    padding: 41px 0 88px;
+}
+
+.position {
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(153, 153, 153);
+    font-style: italic;
+    line-height: 1.6;
+}
+
+
+
+/*footer*/
+.footer-row {
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(51, 51, 51);
+    line-height: 3;
+
+}
+
+.footer-row a {
+    color: #f38181;
+
+}
+
+
+.footer-form {
+    font-size: 0;
+}
+
+input {
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(204, 204, 204);
+    font-style: italic;
+    padding-left: 12px;
+    text-align: left;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(231, 231, 231);
+    background-color: rgb(255, 255, 255);
+    width: 234px;
+    height: 44px;
+}
+
+
+
+.footer-button {
+    border: none;
+    background-color: rgb(149, 225, 211);
+    width: 154px;
+    height: 44px;
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+footer:before {
+    display: block;
+    background-color: rgb(229, 229, 229);
+    width: 1200px;
+    height: 1px;
+    content: '';
+    margin: 80px 0 10px;
+
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden
+}
