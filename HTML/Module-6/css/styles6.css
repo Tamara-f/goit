@@ -64,7 +64,7 @@ nav {
     height: 3px;
     display: block;
     margin-top: 10px;
-    transition: width 0.3s ease-out;
+    transition: width 200ms ease-out;
 }
 
 .menu-items {
@@ -219,17 +219,29 @@ h3:after {
     position: absolute;
     top: 0;
     left: 0;
+    transition-property: 
+       top,
+       left; 
+   transition-duration: 200ms;
 }
 
 
 .team-photo:hover .team-photo-img,
 .team-photo:hover .card-cover {
-    animation-name: animationName;
+    transition-property: 
+    opacity,
+       top,
+       left; 
+   transition-duration: 200ms;
+   opacity: 1;
+        top: -11px;
+        left: -11px;}
+    /* animation-name: animationName;
     animation-duration: 4s;
 
-}
+} */
 
-@keyframes animationName {
+/* @keyframes animationName {
     from {
         opacity: 0;
         top: 0;
@@ -239,7 +251,7 @@ h3:after {
         opacity: 1;
         top: -11px;
         left: -11px;}
-}
+} */
 
 .card-buttons {
     width: 380px;
@@ -265,6 +277,11 @@ h3:after {
     top: 0;
     left: 0;
     opacity: 0;
+    transition-property: 
+    opacity,
+       top,
+       left; 
+   transition-duration: 200ms;
 }
 
 
