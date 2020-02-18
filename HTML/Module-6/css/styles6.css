@@ -42,7 +42,6 @@ nav {
 
 
 .menu {
-    /*ul*/
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
@@ -56,7 +55,7 @@ nav {
     height: 65px;
 }
 
-.menu-items::after {
+.menu-item::after {
     content: '';
     background-color: rgb(243, 129, 129);
     display: none;
@@ -64,19 +63,21 @@ nav {
     height: 3px;
     display: block;
     margin-top: 10px;
-    transition: width 200ms ease-out;
+    transition: width 200ms linear;
+    
 }
 
-.menu-items {
+.menu-item {
     text-decoration: none;
     color: #95e1d3;
+    transition: color 200ms linear;
 }
 
-.menu-items:hover {
+.menu-item:hover {
     color: #f38181;
 }
 
-.menu-items:hover:after {
+.menu-item:hover:after {
     width: 100%;
 }
 
@@ -123,7 +124,7 @@ h3:after {
     padding-top: 27px;
 }
 
-/*iitems*/
+/*items*/
 
 
 
@@ -174,7 +175,7 @@ h3:after {
     margin-bottom: 9px;
 }
 
-.items {
+.product-items {
     padding: 65px 0 0;
     display: flex;
     flex-wrap: wrap;
@@ -183,7 +184,7 @@ h3:after {
     margin: 0 auto;
 }
 
-.item {
+.product-item {
     flex: 0 0 360px;
     margin-bottom: 87px;
     cursor: pointer;
@@ -219,39 +220,43 @@ h3:after {
     position: absolute;
     top: 0;
     left: 0;
-    transition-property: 
+    /* transition-property: 
        top,
        left; 
-   transition-duration: 200ms;
+   transition-duration: 200ms; */
 }
 
 
 .team-photo:hover .team-photo-img,
 .team-photo:hover .card-cover {
-    transition-property: 
+     /* transition-property: 
     opacity,
        top,
        left; 
    transition-duration: 200ms;
+   transition-timing-function: linear; 
    opacity: 1;
         top: -11px;
-        left: -11px;}
-    /* animation-name: animationName;
-    animation-duration: 4s;
+        left: -11px;}  */
+    
+    animation: animation-card 4000ms linear;
+    animation-play-state: ;
+} 
 
-} */
-
-/* @keyframes animationName {
-    from {
+ @keyframes animation-card {
+0% {
         opacity: 0;
-        top: 0;
-        left: 0;}
+        transform: translate(0, 0); }
 
-    to {
-        opacity: 1;
-        top: -11px;
-        left: -11px;}
-} */
+40% { opacity: 1;
+        transform: translate(-11px, -11px); }
+70% { opacity: 1;
+            transform: translate(-9px, -9px); }
+        
+    
+100% {opacity: 0;
+        transform: translate(0, 0); }   
+}  
 
 .card-buttons {
     width: 380px;
@@ -277,11 +282,11 @@ h3:after {
     top: 0;
     left: 0;
     opacity: 0;
-    transition-property: 
+    /* transition-property: 
     opacity,
        top,
        left; 
-   transition-duration: 200ms;
+   transition-duration: 200ms; */
 }
 
 
@@ -331,10 +336,11 @@ h3:after {
     width: 56px;
     height: 56px;
     background-color: rgb(252, 227, 138);
+transition: background-color 200ms linear;
 }
 
 .card-button:hover {
-    background: #95e1d3;
+    background-color: #95e1d3;
 
 }
 
