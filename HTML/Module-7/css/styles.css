@@ -136,33 +136,36 @@ h3 {
 }
 
 .e-commerce::before {
-    content: "";
+    content: url(../img/service-icon-1.png);
     display: block;
-    background-image: url(../img/service-icon-1.png);
-    background-repeat: no-repeat;
-    width: 74px;
+    padding: 14px;
+    width: 73px;
     height: 73px;
     margin: 0 auto 22px;
-}
+    border: 3px solid rgb(254, 209, 54);
+    border-radius: 50%;     
+       }
+   
 
 .responsive-w::before {
-    content: "";
+    content: url(../img/service-icon-2.png);
     display: block;
-    background-image: url(../img/service-icon-2.png);
-    background-repeat: no-repeat;
-    width: 74px;
+    padding: 14px;
+    width: 73px;
     height: 73px;
     margin: 0 auto 22px;
-}
+    border: 3px solid rgb(254, 209, 54);
+    border-radius: 50%;  } 
 
 .w-security::before {
-    content: "";
+    content:  url(../img/service-icon-3.png);
     display: block;
-    background-image: url(../img/service-icon-3.png);
-    background-repeat: no-repeat;
-    width: 74px;
+    padding: 14px;
+    width: 73px;
     height: 73px;
     margin: 0 auto 22px;
+    border: 3px solid rgb(254, 209, 54);
+    border-radius: 50%;   
 }
 
 /*contact*/
@@ -242,6 +245,7 @@ form textarea {
     width: 459px;
     height: 214px;
     padding: 15px 0 0 20px;
+    resize: none;
 }
 
 
