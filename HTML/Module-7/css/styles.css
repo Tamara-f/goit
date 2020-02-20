@@ -262,6 +262,16 @@ form button {
     cursor: pointer;
     padding: 0;
 }
+.form-massage input[required]:invalid, 
+  textarea[required]:invalid {
+    border-color: #ff2c2c;
+  }
+  
+.form-massage input[required]:valid, 
+textarea[required]:valid {
+    border-color: #2cfd2c;
+  }
+
 
 .form-massage
 input::placeholder,
