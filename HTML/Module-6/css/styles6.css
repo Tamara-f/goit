@@ -85,31 +85,34 @@ nav {
 
 
 h2 {
+ 
     font-size: 24px;
     font-family: "Kaushan Script";
     color: rgb(51, 51, 51);
-    line-height: 1.2;
+    line-height: 1.7;
     font-weight: 400;
-    margin-bottom: 12px;
+    margin: 0 auto;
 }
 
-h3 {
+.subtitle {
+    width: 317px;
     font-size: 30px;
     font-family: "Montserrat";
     color: rgb(51, 51, 51);
     font-weight: bold;
     text-transform: uppercase;
-    line-height: 1.2;
+   
+    
 }
 
-h3:after {
+.subtitle:after {
     display: block;
     background-color: rgb(243, 129, 129);
     width: 60px;
     height: 3px;
     content: '';
     margin: 0 auto;
-    margin-top: 35px;
+    margin-top: 25px;
 }
 
 .name {
@@ -185,6 +188,7 @@ h3:after {
 }
 
 .product-item {
+    max-width: 350px;
     flex: 0 0 360px;
     margin-bottom: 87px;
     cursor: pointer;
@@ -196,7 +200,6 @@ h3:after {
     color: rgb(153, 153, 153);
     line-height: 1.6;
     text-align: left;
-
 }
 
 /*team section*/
@@ -206,44 +209,32 @@ h3:after {
     justify-content: space-between;
     list-style: none;
     margin: 0 auto;
-
+    
+}
+.team-photo {
+    /* position: relative; */
+    width: 380px;
+   
 }
 
 .team-substrate {
-    position: relative;
+    position: relative; 
     background-color: rgb(149, 225, 211);
     width: 380px;
-    height: 470px;
+    height: 470px; 
 }
-
-.team-photo-img {
+.card-cover {
+    background: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
     position: absolute;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
-    /* transition-property: 
-       top,
-       left; 
-   transition-duration: 200ms; */
+    opacity: 0;
 }
 
 
-.team-photo:hover .team-photo-img,
-.team-photo:hover .card-cover {
-     /* transition-property: 
-    opacity,
-       top,
-       left; 
-   transition-duration: 200ms;
-   transition-timing-function: linear; 
-   opacity: 1;
-        top: -11px;
-        left: -11px;}  */
-    
-    animation: animation-card 4000ms linear;
-    animation-play-state: ;
-} 
-
- @keyframes animation-card {
+ @keyframes animationCard {
 0% {
         opacity: 0;
         transform: translate(0, 0); }
@@ -258,6 +249,11 @@ h3:after {
         transform: translate(0, 0); }   
 }  
 
+.team-photo:hover .team-photo-img,
+.team-photo:hover .card-cover {
+    animation: animationCard 4000ms linear;
+} 
+
 .card-buttons {
     width: 380px;
     height: 470px;
@@ -267,30 +263,21 @@ h3:after {
     justify-content: center;
     align-items: center;
     opacity: 1;
-
+    list-style: none;
 }
 
 
 
-
-/*test*/
-.card-cover {
-    background: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
-    position: absolute;
-    width: 380px;
-    height: 470px;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    /* transition-property: 
-    opacity,
-       top,
-       left; 
-   transition-duration: 200ms; */
+.card-button a {
+display: block;
+list-style: none;
+position: relative;
+width: 56px;
+height: 56px;
+background-color: rgb(252, 227, 138);
+transition: background-color 200ms linear;
+  
 }
-
-
-
 
 .fb::after {
     background-image: url(../img/icons/fb.png);
@@ -322,36 +309,28 @@ h3:after {
 
 }
 
-.card-button::after {
+.card-button a::after {
     content: "";
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-}
+} 
 
-.card-button {
-    position: relative;
-    list-style: none;
-    width: 56px;
-    height: 56px;
-    background-color: rgb(252, 227, 138);
-transition: background-color 200ms linear;
-}
 
-.card-button:hover {
+.card-button a:hover {
     background-color: #95e1d3;
 
 }
 
-
-
 .team-text {
+   max-width: 980px;
     font-size: 15px;
     font-family: "Roboto";
     color: rgb(153, 153, 153);
     line-height: 1.6;
     padding: 41px 0 88px;
+    margin: 0 auto;
 }
 
 .position {
@@ -361,7 +340,6 @@ transition: background-color 200ms linear;
     font-style: italic;
     line-height: 1.6;
 }
-
 
 
 /*footer*/
@@ -386,10 +364,8 @@ transition: background-color 200ms linear;
 input {
     font-size: 15px;
     font-family: "Roboto";
-    color: rgb(204, 204, 204);
-    font-style: italic;
+    color: rgb(5, 5, 5);
     padding-left: 12px;
-    text-align: left;
     border-style: solid;
     border-width: 1px;
     border-color: rgb(231, 231, 231);
@@ -398,7 +374,13 @@ input {
     height: 44px;
 }
 
-
+input::placeholder {
+    font-size: 15px;
+    font-family: "Roboto";
+    color: rgb(204, 204, 204);
+    font-style: italic;
+      
+} 
 
 .footer-button {
     border: none;
