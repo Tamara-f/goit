@@ -100,7 +100,7 @@ h3 {
 
 .service-description,
 .contact-us-description {
-    padding-bottom: 73px;
+    padding-bottom: 63px;
     font-family: 'Noto Serif', serif;
     font-size: 16px;
     color: rgb(119, 119, 119);
@@ -110,6 +110,7 @@ h3 {
 .services-items {
     display: flex;
     justify-content: space-between;
+    padding-top: 10px;
 }
 
 .services-item a {
@@ -186,7 +187,7 @@ h3 {
     background-color: rgb(34, 34, 34);
     position: relative;
     width: 940px;
-    height: 677px;
+    /* height: 677px; */
     text-align: center;
    
 }
@@ -200,7 +201,7 @@ h3 {
     background-repeat: no-repeat;
     /* opacity: 0.302; */
     position: absolute;
-    bottom: 0;
+    top: 130px;
     left: 57%;
 
 }
@@ -209,7 +210,7 @@ h3 {
 
 .contact-us-title {
     color: rgb(255, 255, 255);
-    padding: 103px 0 0;
+    padding: 86px 0 0;
 }
 
 /*form*/
@@ -229,7 +230,7 @@ h3 {
 form input {
     border-style: solid;
     border-width: 1px;
-    border-color: rgb(204, 204, 204);
+    /* border-color: rgb(10, 10, 10); */
     border-radius: 2px;
     width: 459px;
     height: 54px;
@@ -252,7 +253,7 @@ form textarea {
 form button {
     position: absolute;
     left: 50%;
-    bottom: 50px;
+    top: 529px;
     transform: translate(-50%, -50%);
     border-radius: 3px;
     border: 0px;
@@ -269,6 +270,7 @@ form button {
 .form-massage input[required]:invalid, 
   textarea[required]:invalid {
     border-color: #ff2c2c;
+    background-color: #ffdddd;
   }
   
 .form-massage input[required]:valid, 
