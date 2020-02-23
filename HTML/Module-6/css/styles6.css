@@ -64,7 +64,7 @@ nav {
     display: block;
     margin-top: 10px;
     transition: width 200ms linear;
-    
+
 }
 
 .menu-item {
@@ -85,7 +85,7 @@ nav {
 
 
 h2 {
- 
+
     font-size: 24px;
     font-family: "Kaushan Script";
     color: rgb(51, 51, 51);
@@ -101,8 +101,8 @@ h2 {
     color: rgb(51, 51, 51);
     font-weight: bold;
     text-transform: uppercase;
-   
-    
+
+
 }
 
 .subtitle:after {
@@ -209,20 +209,31 @@ h2 {
     justify-content: space-between;
     list-style: none;
     margin: 0 auto;
-    
+
 }
+
 .team-photo {
-    /* position: relative; */
     width: 380px;
-   
+
+}
+
+.team-photo-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition-property:        
+    transform;
+    transition-duration: 200ms;
+    transition-timing-function:linear;
 }
 
 .team-substrate {
-    position: relative; 
+    position: relative;
     background-color: rgb(149, 225, 211);
     width: 380px;
-    height: 470px; 
+    height: 470px;
 }
+
 .card-cover {
     background: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
     position: absolute;
@@ -231,28 +242,26 @@ h2 {
     top: 0;
     left: 0;
     opacity: 0;
+    transition-property:
+        opacity,
+        transform;
+        transition-duration: 200ms;
+    transition-timing-function:linear;
 }
 
 
- @keyframes animationCard {
-0% {
-        opacity: 0;
-        transform: translate(0, 0); }
-
-40% { opacity: 1;
-        transform: translate(-11px, -11px); }
-70% { opacity: 1;
-            transform: translate(-9px, -9px); }
-        
-    
-100% {opacity: 0;
-        transform: translate(0, 0); }   
-}  
 
 .team-photo:hover .team-photo-img,
 .team-photo:hover .card-cover {
-    animation: animationCard 4000ms linear;
-} 
+    transition-property:
+        opacity,
+        transform;
+        transition-duration: 200ms;
+    transition-timing-function:linear;
+    opacity: 1;
+    top: -11px;
+    left: -11px;
+}
 
 .card-buttons {
     width: 380px;
@@ -269,14 +278,14 @@ h2 {
 
 
 .card-button a {
-display: block;
-list-style: none;
-position: relative;
-width: 56px;
-height: 56px;
-background-color: rgb(252, 227, 138);
-transition: background-color 200ms linear;
-  
+    display: block;
+    list-style: none;
+    position: relative;
+    width: 56px;
+    height: 56px;
+    background-color: rgb(252, 227, 138);
+    transition: background-color 200ms linear;
+
 }
 
 .fb::after {
@@ -315,8 +324,11 @@ transition: background-color 200ms linear;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-} 
+}
 
+.card-button:not(:last-child) {
+    border-right: 1px solid #f38181;
+}
 
 .card-button a:hover {
     background-color: #95e1d3;
@@ -324,7 +336,7 @@ transition: background-color 200ms linear;
 }
 
 .team-text {
-   max-width: 980px;
+    max-width: 980px;
     font-size: 15px;
     font-family: "Roboto";
     color: rgb(153, 153, 153);
@@ -379,8 +391,8 @@ input::placeholder {
     font-family: "Roboto";
     color: rgb(204, 204, 204);
     font-style: italic;
-      
-} 
+
+}
 
 .footer-button {
     border: none;
