@@ -212,15 +212,13 @@ h2 {
 
 }
 
-.team-photo {
-    width: 380px;
 
-}
 
 .team-photo-img {
     position: absolute;
     top: 0;
     left: 0;
+    transform: translate(0, 0);
     transition-property:        
     transform;
     transition-duration: 200ms;
@@ -242,11 +240,12 @@ h2 {
     top: 0;
     left: 0;
     opacity: 0;
-    transition-property:
-        opacity,
-        transform;
-        transition-duration: 200ms;
+    /* transition-property:
+    opacity,
+    transform;
+    transition-duration: 200ms;
     transition-timing-function:linear;
+    transform: translate(0, 0); */
 }
 
 
@@ -259,8 +258,7 @@ h2 {
         transition-duration: 200ms;
     transition-timing-function:linear;
     opacity: 1;
-    top: -11px;
-    left: -11px;
+    transform: translate(-11px, -11px);
 }
 
 .card-buttons {
