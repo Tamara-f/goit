@@ -1,26 +1,22 @@
 
-@media (max-width: 747px) {
-    .container {
-        width: 320px;
-    }
-
+@media (max-width: 659px) {
+   
     .substrate {
         height: 540px;
     }
-
-    .logo a {
-        top: 175px;
-        left: 50%;
-        transform: translateX(-50%);
+.nav-list {       
+        margin-bottom: 100px;
+ 
     }
-
-    .nav-list {
-        justify-content: center;
-        top: 20px;
-        left: 50%;
-        transform: translate(-50%);
-    }
-
+.nav {
+    flex-wrap: wrap-reverse;
+    align-content: center; 
+    justify-content: center;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+}
     .header-title {
         font-size: 30px;
     }
@@ -37,12 +33,11 @@
         width: 284px;
     }
 }
-
-@media (min-width: 748px) {
+ 
+@media (min-width: 660px) {
     .container {
-        width: 748px;
-        /* margin: 0 auto; */
-    }
+        width: 660px;
+          }
 
     .substrate {
         height: 700px;
@@ -56,17 +51,16 @@
         margin: auto;
         padding: 0;
         text-align: center;
-    }
-
-    .logo a {
-        top: 10%;
-        left: 6%;
-    }
-
-    .nav-list {
-        justify-content: flex-end;
-        top: 9%;
-        right: 6%;
+    }   
+            
+    .nav {
+        align-items: baseline;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        top: 20px;         
+        left: 50%;
+        transform: translateX(-50%);  
+       
     }
 
     .header-text {
@@ -94,6 +88,8 @@
 @media (min-width: 942px) {
     .container {
         width: 942px;
+        margin: 0 auto;
+        text-align: center;
     }
 
     .meet-photos {
@@ -101,11 +97,11 @@
         margin: auto;
         padding: 0;
         text-align: center;
+        flex-wrap: nowrap;
     }
 
     .header-text {
         width: 503px;
     }
 }
-
 
