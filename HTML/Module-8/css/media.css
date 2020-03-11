@@ -25,13 +25,11 @@
         font-size: 18px;
     }
 
-    .header-button-find {
-        width: 280px;
+    .header-button-find a{
+ padding: 10px 50px;
     }
 
-    .see-other {
-        width: 284px;
-    }
+    
 }
  
 @media (min-width: 660px) {
@@ -75,12 +73,12 @@
         font-size: 24px;
     }
 
-    .header-button-find {
-        width: 226px;
+    .header-button-find a{
+        padding: 10px 22px;
     }
 
-    .see-other {
-        width: 197px;
+    .see-other a{
+        padding: 10px 30px;
     }
 
 }
