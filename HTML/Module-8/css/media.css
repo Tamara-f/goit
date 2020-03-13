@@ -62,7 +62,7 @@
     }
 
     .header-text {
-        width: 503px;
+        width: 523px;
     }
 
     .header-title {
@@ -86,7 +86,6 @@
 @media (min-width: 942px) {
     .container {
         width: 942px;
-        margin: 0 auto;
         text-align: center;
     }
 
@@ -99,7 +98,7 @@
     }
 
     .header-text {
-        width: 503px;
+        width: 523px;
     }
 }
 
