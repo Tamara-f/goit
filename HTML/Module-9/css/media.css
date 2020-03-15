@@ -1,0 +1,104 @@
+
+@media (max-width: 767px) {
+   
+ .substrate {
+        height: 540px;
+    }
+.nav-list {       
+    margin: 10px auto 110px;
+     }
+.nav {
+    flex-wrap: wrap-reverse;
+    align-content: center; 
+    justify-content: center;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+}
+.logo {
+    text-align: center;
+}
+    .header-title {
+        font-size: 30px;
+        width: 300px;
+            }
+
+    .header-subtitle {
+        font-size: 18px;
+        padding: 0 30px 10px;
+    }
+
+    .header-button-find a{
+ padding: 10px 50px;
+    }
+     
+}
+ 
+ @media (min-width: 768px) {
+    .substrate {
+        height: 700px;
+    }
+    .header-title {
+        padding-top: 150px;
+    }
+
+    .meet-photos {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 492px;
+        margin: auto;
+        padding: 0;
+        text-align: center;
+    }   
+
+      .meet-photo {
+          flex: 0 0 48%;
+      }
+    .nav {
+        align-items: baseline;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        top: 20px;         
+        left: 50%;
+        transform: translateX(-50%);  
+       
+    }
+
+
+    .header-title {
+        font-size: 52px;
+        width: 523px;
+    }
+
+    .header-subtitle {
+        font-size: 24px;
+        padding: 18px 0 25px;
+    }
+
+
+    .header-button-find a{
+        padding: 10px 22px;
+    }
+
+    .see-other a{
+        padding: 10px 30px;
+    }
+
+        } 
+
+@media (min-width: 942px) {
+   
+    .meet-photos {
+        width: 942px;
+        margin: auto;
+        padding: 0;
+        text-align: center;
+        flex-wrap: nowrap;
+    }
+    .meet-photo {
+        flex: 0 0 25%;
+    }
+ 
+} 
