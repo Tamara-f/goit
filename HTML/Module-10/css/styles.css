@@ -315,7 +315,7 @@ img {
     justify-content: center;
 }
 
-.social__button svg {
+.social__button-svg {
     width: 27px;
     height: 27px;
     fill: #f38181;
@@ -336,12 +336,12 @@ img {
 }
 
 .socials__button-link:hover,
-.socials__button-link:hover svg {
+.socials__button-link:hover .social__button-svg {
     fill: #ffffff;
     background-color: #f38181;
 }
 
-.socials__button:not(:last-child) {
+.social__button:not(:last-child) {
     border-right: 1px solid #f38181;
 }
 
