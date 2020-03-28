@@ -1,0 +1,61 @@
+.product__icon {
+  max-width: 350px;
+  flex: 0 0 360px;
+  margin-bottom: 87px;
+  padding-left: 60px;
+  list-style: none;
+
+  &-digital {
+    background: url(../images/icons/products/digital.png) no-repeat 0 4px;
+  }
+
+  &-css {
+    background: url(../images/icons/products/css.png) no-repeat 0 4px;
+  }
+
+  &-seo {
+    background: url(../images/icons/products/seo.png) no-repeat 0 4px;
+  }
+
+  &-creativity {
+    background: url(../images/icons/products/creativity.png) no-repeat 0 4px;
+  }
+
+  &-design {
+    background: url(../images/icons/products/webdesighn.png) no-repeat 0 4px;
+  }
+
+  &-photography {
+    background: url(../images/icons/products/photography.png) no-repeat 0 4px;
+  }
+}
+
+
+.product__item-title {
+  font-size: $main-font-size;
+  font-family: "Montserrat";
+  color: $primary-dark-color;
+  text-transform: uppercase;
+  line-height: 1.7;
+  font-weight: 400;
+  text-align: left;
+  margin: 0;
+}
+
+.product__items {
+  padding: 65px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1151px;
+  margin: 0 auto;
+}
+
+
+.product__item-text {
+  font-size: 15px;
+  font-family: "Roboto";
+  color: $secondary-dark-color;
+  line-height: 1.6;
+  text-align: left;
+}

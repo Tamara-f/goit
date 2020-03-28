@@ -1,0 +1,32 @@
+
+.section__title {
+    font-size: 24px;
+    font-family: "Kaushan Script";
+    color: $primary-dark-color;
+    line-height: 1.7;
+    font-weight: 400;
+    margin: 0 auto;
+  }
+  
+  .section__subtitle {
+    width: 317px;
+    font-size: 30px;
+    font-family: "Montserrat";
+    color: $primary-dark-color;
+    font-weight: bold;
+    text-transform: uppercase;
+  
+    &::after {
+    display: block;
+    background-color: $secondary-orange-color;
+    width: 60px;
+    height: 3px;
+    content: '';
+    margin: 0 auto;
+    margin-top: 25px;
+  }}
+  .section__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}

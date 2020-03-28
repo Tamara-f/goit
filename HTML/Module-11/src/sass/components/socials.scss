@@ -1,0 +1,43 @@
+
+.socials {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9));
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity, transform 200ms linear;
+    opacity: 0;
+}
+
+.social__buttons {
+    @include center-flex('all');
+    height: 100%;
+}
+
+.social__button-svg {
+    width: 27px;
+    height: 27px;
+    fill: $secondary-orange-color;
+    transition: fill 200ms linear;
+}
+
+.socials__button-fb {
+    padding-left: 7px;
+}
+
+.socials__button-link {
+    width: 56px;
+    height: 56px;
+    background-color: $primary-orange-color;
+ @include center-flex('all');
+
+&:hover,
+&:hover .social__button-svg {
+    fill: $primary-white-color;
+    background-color: $secondary-orange-color;
+}}
+
+.social__button:not(:last-child) {
+    border-right: 1px solid $secondary-orange-color;
+}

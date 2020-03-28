@@ -1,0 +1,38 @@
+
+
+.header-text {
+    width: 820px;
+    text-align: center;
+    padding-top: 150px;
+    margin: 0 auto;
+}
+
+.header-text__subtitle {
+    font-size: 72px;
+    font-family: "Kaushan Script";
+    color: rgb(255, 255, 255);
+    line-height: $main-font-height;
+    margin-bottom: 40px;
+}
+
+.header-text__title {
+    font-size: 150px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 0.933;
+    margin-bottom: 120px;
+}
+
+.header-text__link {
+    font-size: $main-font-size;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(255, 255, 255);
+    padding: 8px 29px;
+}
