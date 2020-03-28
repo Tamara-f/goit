@@ -2,6 +2,7 @@
  * Все паршалы импортировать в этот файл
  */
 @import 'helpers/variables';
+@import 'helpers/placeholders';
 @import 'helpers/mixins';
 @import 'helpers/extras';
 @import 'normalize';
@@ -9,8 +10,8 @@
 @import 'styles';
 
 /*components*/
-@import 'components/link';
-@import 'components/list';
+// @import 'components/link';
+// @import 'components/list';
 @import 'components/container';
 @import 'components/header-sub.scss';
 @import 'components/nav';
@@ -20,8 +21,9 @@
 @import 'components/section';
 @import 'components/products';
 @import 'components/team';
- @import 'components/socials';
-//   @import 'components/';
+@import 'components/socials';
+@import 'components/footer';
+
 //   @import 'components/';
 //   @import 'components/';
 //   @import 'components/';

@@ -1,4 +1,3 @@
-
 .socials {
     width: 100%;
     height: 100%;
@@ -12,6 +11,7 @@
 
 .social__buttons {
     @include center-flex('all');
+    @extend %list;
     height: 100%;
 }
 
@@ -30,7 +30,9 @@
     width: 56px;
     height: 56px;
     background-color: $primary-orange-color;
- @include center-flex('all');
+  @include center-flex('all');
+  @extend %link;  
+
 
 &:hover,
 &:hover .social__button-svg {
@@ -41,3 +43,7 @@
 .social__button:not(:last-child) {
     border-right: 1px solid $secondary-orange-color;
 }
+
+
+
+

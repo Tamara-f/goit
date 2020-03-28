@@ -8,12 +8,13 @@
     line-height: $main-font-height;
     width: 491px;
     height: 65px;
+    @extend %list;
 }
 
 .site-menu-item {
     color: $primary-white-color;
     transition: color 200ms linear;
-
+@extend %link;
 
 &::after {
     content: '';

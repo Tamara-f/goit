@@ -3,7 +3,7 @@
   flex: 0 0 360px;
   margin-bottom: 87px;
   padding-left: 60px;
-  list-style: none;
+  @extend %list;
 
   &-digital {
     background: url(../images/icons/products/digital.png) no-repeat 0 4px;
